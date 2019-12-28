@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.reports.Listeners" />
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="com.qa.base.BaseClass" />
+			<class name="com.qa.testcases.TC_005_DELETE_Employee_Record" />
+			<class name="com.qa.testcases.TC_003_POST_New_Employee_Record" />
+			<class name="com.qa.testcases.TC_004_PUT_Employee_Record" />
+			<class name="com.qa.testcases.TC_001_Get_All_Employee" />
+			<class name="com.qa.testcases.TC_002_Get_Single_Employee_Data" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

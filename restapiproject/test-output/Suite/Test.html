@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Dec 28 09:09:55 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10400 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.testcases.TC_004_PUT_Employee_Record.checkBody()'><b>checkBody</b><br>Test class: com.qa.testcases.TC_004_PUT_Employee_Record</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_004_PUT_Employee_Record@4678c730</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_003_POST_New_Employee_Record.checkBodyResponse()'><b>checkBodyResponse</b><br>Test class: com.qa.testcases.TC_003_POST_New_Employee_Record</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_003_POST_New_Employee_Record@724af044</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_001_Get_All_Employee.checkContentEncodingHeader()'><b>checkContentEncodingHeader</b><br>Test class: com.qa.testcases.TC_001_Get_All_Employee</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_001_Get_All_Employee@6767c1fc</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_003_POST_New_Employee_Record.checkContentType()'><b>checkContentType</b><br>Test class: com.qa.testcases.TC_003_POST_New_Employee_Record</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_003_POST_New_Employee_Record@724af044</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_002_Get_Single_Employee_Data.checkContentType()'><b>checkContentType</b><br>Test class: com.qa.testcases.TC_002_Get_Single_Employee_Data</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_002_Get_Single_Employee_Data@29ee9faa</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_002_Get_Single_Employee_Data.checkEmplyeeData()'><b>checkEmplyeeData</b><br>Test class: com.qa.testcases.TC_002_Get_Single_Employee_Data</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_002_Get_Single_Employee_Data@29ee9faa</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_005_DELETE_Employee_Record.checkResponseBody()'><b>checkResponseBody</b><br>Test class: com.qa.testcases.TC_005_DELETE_Employee_Record</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_005_DELETE_Employee_Record@39aeed2f</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_001_Get_All_Employee.checkResponseTime()'><b>checkResponseTime</b><br>Test class: com.qa.testcases.TC_001_Get_All_Employee</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_001_Get_All_Employee@6767c1fc</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_001_Get_All_Employee.checkServerTypeHeader()'><b>checkServerTypeHeader</b><br>Test class: com.qa.testcases.TC_001_Get_All_Employee</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_001_Get_All_Employee@6767c1fc</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_003_POST_New_Employee_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.qa.testcases.TC_003_POST_New_Employee_Record</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_003_POST_New_Employee_Record@724af044</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_004_PUT_Employee_Record.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.qa.testcases.TC_004_PUT_Employee_Record</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_004_PUT_Employee_Record@4678c730</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_002_Get_Single_Employee_Data.checkStatusCode()'><b>checkStatusCode</b><br>Test class: com.qa.testcases.TC_002_Get_Single_Employee_Data</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_002_Get_Single_Employee_Data@29ee9faa</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_002_Get_Single_Employee_Data.checkStatusLine()'><b>checkStatusLine</b><br>Test class: com.qa.testcases.TC_002_Get_Single_Employee_Data</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_002_Get_Single_Employee_Data@29ee9faa</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_001_Get_All_Employee.checkstatusLine()'><b>checkstatusLine</b><br>Test class: com.qa.testcases.TC_001_Get_All_Employee</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_001_Get_All_Employee@6767c1fc</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_001_Get_All_Employee.getAllHeaders()'><b>getAllHeaders</b><br>Test class: com.qa.testcases.TC_001_Get_All_Employee</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_001_Get_All_Employee@6767c1fc</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_001_Get_All_Employee.validateStatusCode()'><b>validateStatusCode</b><br>Test class: com.qa.testcases.TC_001_Get_All_Employee</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_001_Get_All_Employee@6767c1fc</td></tr>
+<tr>
+<td title='com.qa.testcases.TC_001_Get_All_Employee.verifyResponseBody()'><b>verifyResponseBody</b><br>Test class: com.qa.testcases.TC_001_Get_All_Employee</td>
+<td></td>
+<td>0</td>
+<td>com.qa.testcases.TC_001_Get_All_Employee@6767c1fc</td></tr>
+</table><p>
+</body>
+</html>
