@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.qa.reports.Listeners"/>
-  </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.qa.testcases.TC_004_PUT_Employee_Record">
-        <methods>
-          <include name="checkContentEncoding"/>
-          <include name="putEmployeeRecord"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.testcases.TC_004_PUT_Employee_Record -->
       <class name="com.qa.testcases.TC_005_DELETE_Employee_Record">
         <methods>
           <include name="deleteEmployeeRecord"/>
+          <include name="checkResponseBody"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.testcases.TC_005_DELETE_Employee_Record -->
-      <class name="com.qa.testcases.TC_001_Get_All_Employee">
-        <methods>
-          <include name="Get_All_Employee_Data"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.testcases.TC_001_Get_All_Employee -->
       <class name="com.qa.testcases.TC_003_POST_New_Employee_Record">
         <methods>
           <include name="setUp"/>
@@ -37,6 +22,18 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.testcases.TC_002_Get_Single_Employee_Data -->
+      <class name="com.qa.testcases.TC_004_PUT_Employee_Record">
+        <methods>
+          <include name="putEmployeeRecord"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC_004_PUT_Employee_Record -->
+      <class name="com.qa.testcases.TC_001_Get_All_Employee">
+        <methods>
+          <include name="Get_All_Employee_Data"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC_001_Get_All_Employee -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

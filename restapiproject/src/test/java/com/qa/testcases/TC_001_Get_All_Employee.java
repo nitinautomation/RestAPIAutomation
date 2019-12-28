@@ -21,7 +21,7 @@ public class TC_001_Get_All_Employee extends BaseClass {
 		response = httpRequest.request(Method.GET, "/employees");
 	}
 
-	@Test
+	@Test()
 	public void verifyResponseBody() {
 
 		logger.info("*****Checking Response Body********");
@@ -39,7 +39,7 @@ public class TC_001_Get_All_Employee extends BaseClass {
 		Assert.assertTrue(time < 40000);
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void getAllHeaders() {
 
 		Headers allHeaders = response.headers();

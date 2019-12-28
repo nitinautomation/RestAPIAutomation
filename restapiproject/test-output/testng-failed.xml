@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
       <class name="com.qa.testcases.TC_005_DELETE_Employee_Record">
         <methods>
@@ -10,6 +10,30 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.qa.testcases.TC_005_DELETE_Employee_Record -->
+      <class name="com.qa.testcases.TC_003_POST_New_Employee_Record">
+        <methods>
+          <include name="setUp"/>
+          <include name="add_New_Employee_Record"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC_003_POST_New_Employee_Record -->
+      <class name="com.qa.testcases.TC_002_Get_Single_Employee_Data">
+        <methods>
+          <include name="Get_Single_Employee_Data"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC_002_Get_Single_Employee_Data -->
+      <class name="com.qa.testcases.TC_004_PUT_Employee_Record">
+        <methods>
+          <include name="putEmployeeRecord"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC_004_PUT_Employee_Record -->
+      <class name="com.qa.testcases.TC_001_Get_All_Employee">
+        <methods>
+          <include name="Get_All_Employee_Data"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TC_001_Get_All_Employee -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
